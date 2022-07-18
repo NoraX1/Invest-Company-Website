@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bm;
+    src: url(./font/BlackMango-Black.otf);
+}
+
+h1{
+    font-family: bm;
+}
+
+body{
+    background: url(./img/stars-bg.png);
+    color: rgb(184, 182, 182);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    /* font-size: 18px; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo .star{
+    width: 14px;
+    object-fit: cover;
+    margin-right: 4px;
+}
+
+.menu-items{
+    display: flex;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    transition: .3s ease;
+}
+
+a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+section{
+    height: 100vh;
+    padding: 3rem;
+}
+
+.section-one{
+    height: calc(100vh - 85px);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.gold{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+.title{
+    line-height: 1.2;
+}
+.title h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.title .star{
+    width: 40px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 400px;
+}
+
+.p{
+    padding: 2rem 0;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, 
+    #2B32B2 , #1488CC
+    );
+    color: #fff;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button::after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\e098';
+    margin-left: 1rem;
+}
+
+button:hover{
+    background: linear-gradient(to right, #121772, #075886);
+}
+
+.glow{
+    filter: drop-shadow(-20px 0px 1.75em rgb(81,147,194));
+}
+
+
+.right-side{
+    justify-self: flex-end;
+}
+
+.title h2{
+    font-size: 24px;
+    opacity: .5;
+}
+
+.line{
+    width: 100%;
+    background-color: rgb(184, 182, 182);
+    height: 2px;
+    margin-top: 1rem;
+}
+
+.gold3{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.type{
+    padding: 1rem 0;
+}
+
+.type :first-child{
+    font-size: 18px;
+}
+
+.g-type{
+    color: #0152fc;
+}
+
+.line-blue{
+    background-color: #0152fc;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.card{
+    /* background-color: #0152fc; */
+    width: 28%;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.img-card{
+    max-width: 350px;
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card-1{
+    background: linear-gradient(to right,
+    #545d60 , #283048
+    );
+}
+.card-2{
+    background: linear-gradient(to right,
+    #4b485a , #1f1c2c
+    );
+}
+.card-3{
+    background: linear-gradient(to right,
+    #3f4c6b , #535e79
+    );
+}
+
+.card:hover{
+    background: linear-gradient(to left,
+    #3a7bd5, #00d2ff
+    );
+}
+
+
+.color{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.card span{
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #fff;
+}
+
+.card:hover .color{
+    color: #fff;
+}
+
+.txt{
+    font-size: 24px;
+}
+
+.txt span{
+    color: #0152fc;
+}
+
+.sides{
+    padding-top: 5rem;
+}
+
+.menu{
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu li{
+    width: 30%;
+}
+
+.footer-section{
+    height: auto;
+}
+
+footer{
+    padding: 3rem;
+}
+
+.center{
+    justify-self: center;
+}
+
+.star-s2{
+    position: absolute;
+    width: 65px;
+    right: -2%;
+}
+
+.star-s4{
+    width: 65px;
+    position: absolute;
+    left: -2%;
+    margin-top: 2.5rem;
+}
+
+.star-s5{
+    position: absolute;
+    left: 40%;
+    width: 40px;
+}
+
+.image{
+
+    animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
